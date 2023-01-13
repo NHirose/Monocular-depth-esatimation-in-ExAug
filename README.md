@@ -66,7 +66,7 @@ The codes provided on this page are published under the Creative Commons Attribu
 Citation
 =================
 
-If you use ExAug's software, please cite:
+If you use our software, please cite:
 
 @article{hirose2022exaug,  
   title={ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation},  
