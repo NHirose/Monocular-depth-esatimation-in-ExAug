@@ -15,8 +15,6 @@ Ubuntu 18.04
 
 Pytorch 1.8.0
 
-Python Pillow 1.1.7
-
 ROS MELODIC(http://wiki.ros.org/melodic)
 
 Nvidia GPU
@@ -28,7 +26,7 @@ We are providing the code and the trained model to estimate the depth image. In 
 
 #### Step1: Download1 (our trained model and code)
 git clone https://github.com/NHirose/Monocular-depth-esatimation-in-ExAug.git
-Download our trained model from here(https://drive.google.com/file/d/1De_sFYgYWtjkzNq4T7KsLTZYgdv8ZGy6/view?usp=share_link) and un zip it in the same folder.
+Download our trained model from here(https://drive.google.com/file/d/1De_sFYgYWtjkzNq4T7KsLTZYgdv8ZGy6/view?usp=share_link) and unzip it in the same folder.
 
 #### Step2: Download2 (public codes, monodepth2, which is used in our codes)
 We trained our model by applying our learnable camera model by Depth360(https://arxiv.org/abs/2110.10415) and pose loss into monodepth2. Thank you, monodepth2!! By having pose lose, our model can esimate the depth with scale.
@@ -49,7 +47,7 @@ To turn on RICOH THETA S as the live streaming mode, please hold the bottom butt
 To capture the image from RICOH THETA S, we used the open source in ROS, cv_camera_node(http://wiki.ros.org/cv_camera).
 The subscribed topic name of the image is "/cv_camera_node/image".
 
-#### Step5: Runing DVMPC
+#### Step5: Runing our depth estimation
 The last process is just to run our algorithm.
 
 python3 depth_est_exaug.py
@@ -67,20 +65,20 @@ Citation
 
 If you use ExAug's software, please cite:
 
-@article{hirose2022exaug,
-  title={ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation},
-  author={Hirose, Noriaki and Shah, Dhruv and Sridhar, Ajay and Levine, Sergey},
-  journal={arXiv preprint arXiv:2210.07450},
-  year={2022}
-}
+@article{hirose2022exaug,  
+  title={ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation},  
+  author={Hirose, Noriaki and Shah, Dhruv and Sridhar, Ajay and Levine, Sergey},  
+  journal={arXiv preprint arXiv:2210.07450},  
+  year={2022}  
+}  
 
-@inproceedings{hirose2022depth360,
-  title={Depth360: Self-supervised Learning for Monocular Depth Estimation using Learnable Camera Distortion Model},
-  author={Hirose, Noriaki and Tahara, Kosuke},
-  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  pages={317--324},
-  year={2022},
-  organization={IEEE}
-}
+@inproceedings{hirose2022depth360,  
+  title={Depth360: Self-supervised Learning for Monocular Depth Estimation using Learnable Camera Distortion Model},  
+  author={Hirose, Noriaki and Tahara, Kosuke},  
+  booktitle={2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},  
+  pages={317--324},  
+  year={2022},  
+  organization={IEEE}  
+}  
 
 
