@@ -25,15 +25,15 @@ How to estimate the depth image
 We are providing the code and the trained model to estimate the depth image. In ExAug, we use this estimated depth to calculate our proposed objectives to avoid the collision and to generate the synthetic images for the target camera.
 
 #### Step1: Download1 (our trained model and code)
-git clone https://github.com/NHirose/Monocular-depth-esatimation-in-ExAug.git
+git clone https://github.com/NHirose/Monocular-depth-esatimation-in-ExAug.git  
 Download our trained model from here(https://drive.google.com/file/d/1De_sFYgYWtjkzNq4T7KsLTZYgdv8ZGy6/view?usp=share_link) and unzip it in the same folder.
 
 #### Step2: Download2 (public codes, monodepth2, which is used in our codes)
-We trained our model by applying our learnable camera model by Depth360(https://arxiv.org/abs/2110.10415) and pose loss into monodepth2. Thank you, monodepth2!! By having pose lose, our model can esimate the depth with scale.
-cd ./Monocular-depth-esatimation-in-ExAug
-git clone https://github.com/nianticlabs/monodepth2.git
-cp ./monodepth2/layers.py .
-cp ./monodepth2/networks/resnet_encoder.py ./networks/
+We trained our model by applying our learnable camera model by Depth360(https://arxiv.org/abs/2110.10415) and pose loss into monodepth2. Thank you, monodepth2!! By having pose lose, our model can esimate the depth with scale.  
+cd ./Monocular-depth-esatimation-in-ExAug  
+git clone https://github.com/nianticlabs/monodepth2.git  
+cp ./monodepth2/layers.py .  
+cp ./monodepth2/networks/resnet_encoder.py ./networks/  
 
 #### Step3: Camera Setup
 Our model for monocular depth estimation is trained on GO Stanford dataset, Recon dataset and KITTI odometry dataset.
@@ -48,9 +48,9 @@ To capture the image from RICOH THETA S, we used the open source in ROS, cv_came
 The subscribed topic name of the image is "/cv_camera_node/image".
 
 #### Step5: Runing our depth estimation
-The last process is just to run our algorithm.
+The last process is just to run our algorithm.  
 
-python3 depth_est_exaug.py
+python3 depth_est_exaug.py  
 
 We publish the depth image as '/estimated_depth' for the visualization.
 If you need the point clouds, you can use "cam_points_f" and "cam_points_b" in line 215 and 216.
