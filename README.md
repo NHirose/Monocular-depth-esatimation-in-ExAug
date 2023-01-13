@@ -7,7 +7,10 @@ Please see the [website](https://sites.google.com/view/exaug-nav/) for more tech
 
 #### Paper
 **["ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation"](https://arxiv.org/abs/2210.07450)**  
-**[Noriaki Hirose](https://sites.google.com/view/noriaki-hirose/), [Dhruv Shah](https://people.eecs.berkeley.edu/~shah/), Ajay Sridhar, [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/?_ga=2.182963686.1720382867.1664319155-2139079238.1651157950)**
+**[Noriaki Hirose](https://sites.google.com/view/noriaki-hirose/), [Dhruv Shah](https://people.eecs.berkeley.edu/~shah/), Ajay Sridhar, and [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/?_ga=2.182963686.1720382867.1664319155-2139079238.1651157950)**
+
+**["Depth360: Serl-supervised Learning for Monocular Depth Estimation using Learnable Camera Distortion Model"](https://arxiv.org/abs/2110.10415)**  
+**[Noriaki Hirose](https://sites.google.com/view/noriaki-hirose/), and Kosuke Tahara**
 
 System Requirement
 =================
