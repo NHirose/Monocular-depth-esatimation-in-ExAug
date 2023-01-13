@@ -6,8 +6,8 @@
 Please see the [website](https://sites.google.com/view/exaug-nav/) for more technical details.
 
 #### Paper
-**["ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation"](https://arxiv.org/abs/2210.07450)**
-
+**["ExAug: Robot-Conditioned Navigation Policies via Geometric Experience Augmentation"](https://arxiv.org/abs/2210.07450)**  
+**[Noriaki Hirose](https://sites.google.com/view/noriaki-hirose/), [Dhruv Shah](https://people.eecs.berkeley.edu/~shah/), Ajay Sridhar, [Sergey Levine](https://people.eecs.berkeley.edu/~svlevine/?_ga=2.182963686.1720382867.1664319155-2139079238.1651157950)**
 
 System Requirement
 =================
